@@ -29,8 +29,17 @@
 
     <!-- JavaScript Application Libraries -->
     <script src="../app/js/app/namespace.js"></script>
-    
+    <script src="../app/js/app/config.js"></script>
+    <script>
+    // Test overrides (before any app components)
+      App.Config = _.extend(App.Config, {
+        storeName: "notes-test"
+      });
+    </script>
     <script src="../app/js/app/models/note.js"></script>
+    <script src="../app/js/app/collections/notes.js"></script>
+    <script src="../app/js/app/templates/templates.js"></script>
+    <script src="../app/js/app/views/note-view.js"></script>
     <!-- app-rest-specific collection. -->
     
 
@@ -52,6 +61,8 @@
     <script src="js/spec/namespace.spec.js"></script>
     <script src="js/spec/models/note.spec.js"></script>
     <!-- Ch03 -->
-    
+    <script src="js/spec/collections/notes.spec.js"></script>
+    <script src="js/spec/views/note-view.spec.js"></script>
+
   </body>
 </html>
