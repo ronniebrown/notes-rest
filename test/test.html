@@ -31,9 +31,9 @@
     <script src="../app/js/app/namespace.js"></script>
     <script src="../app/js/app/config.js"></script>
     <script>
-    // Test overrides (before any app components)
+      // Test overrides (before any app components).
       App.Config = _.extend(App.Config, {
-        storeName: "notes-test"
+        storeName: "notes-test" // localStorage for tests.
       });
     </script>
     <script src="../app/js/app/models/note.js"></script>
@@ -42,8 +42,10 @@
     <script src="../app/js/app/views/note-nav.js"></script>
     <script src="../app/js/app/views/note-view.js"></script>
     <script src="../app/js/app/views/note.js"></script>
-    <!-- app-rest-specific collection. -->
-    
+    <script src="../app/js/app/views/notes-item.js"></script>
+    <script src="../app/js/app/views/notes-filter.js"></script>
+    <script src="../app/js/app/views/notes.js"></script>
+    <script src="../app/js/app/routers/router.js"></script>
 
     <!-- Set up Mocha and Chai -->
     <script>
@@ -68,6 +70,10 @@
     <!-- Ch04 -->
     <script src="js/spec/views/note-nav.spec.js"></script>
     <script src="js/spec/views/note.spec.js"></script>
-
+    <!-- Ch05 -->
+    <script src="js/spec/views/notes-item.spec.js"></script>
+    <script src="js/spec/views/notes-filter.spec.js"></script>
+    <script src="js/spec/views/notes.spec.js"></script>
+    <script src="js/spec/routers/router.spec.js"></script>
   </body>
 </html>
